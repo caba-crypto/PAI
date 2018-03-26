@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+#include "System/Logger/pai_log.hpp"
+#include "Compiler/pai_compiler.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    pai_compiler_init();
     return 0;
 }

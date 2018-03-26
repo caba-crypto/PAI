@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3C433B622069594F007F666F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C433B612069594F007F666F /* main.cpp */; };
+		3CF9973D2069631A0002598D /* pai_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9973B2069631A0002598D /* pai_log.cpp */; };
+		3CF99745206968E50002598D /* pai_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CF99744206968E50002598D /* pai_compiler.cpp */; };
+		3CF9974A20696A7B0002598D /* PAI_MOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9974820696A7B0002598D /* PAI_MOD.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		3C433B5E2069594F007F666F /* PAI-BOT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PAI-BOT"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C433B612069594F007F666F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3CF9973B2069631A0002598D /* pai_log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pai_log.cpp; sourceTree = "<group>"; };
+		3CF9973C2069631A0002598D /* pai_log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pai_log.hpp; sourceTree = "<group>"; };
+		3CF99743206968E50002598D /* pai_compiler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pai_compiler.hpp; path = "PAI-BOT/Compiler/pai_compiler.hpp"; sourceTree = SOURCE_ROOT; };
+		3CF99744206968E50002598D /* pai_compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pai_compiler.cpp; path = "PAI-BOT/Compiler/pai_compiler.cpp"; sourceTree = SOURCE_ROOT; };
+		3CF99747206969DD0002598D /* PAI_Modules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAI_Modules.h; sourceTree = "<group>"; };
+		3CF9974820696A7B0002598D /* PAI_MOD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PAI_MOD.cpp; sourceTree = "<group>"; };
+		3CF9974920696A7B0002598D /* PAI_MOD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PAI_MOD.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,49 @@
 		3C433B602069594F007F666F /* PAI-BOT */ = {
 			isa = PBXGroup;
 			children = (
+				3CF99746206969C00002598D /* Modules */,
+				3CF99739206963050002598D /* System */,
+				3CF997382069610B0002598D /* Compiler */,
 				3C433B612069594F007F666F /* main.cpp */,
 			);
 			path = "PAI-BOT";
+			sourceTree = "<group>";
+		};
+		3CF997382069610B0002598D /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				3CF99744206968E50002598D /* pai_compiler.cpp */,
+				3CF99743206968E50002598D /* pai_compiler.hpp */,
+			);
+			name = Compiler;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3CF99739206963050002598D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9973A2069630C0002598D /* Logger */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		3CF9973A2069630C0002598D /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9973C2069631A0002598D /* pai_log.hpp */,
+				3CF9973B2069631A0002598D /* pai_log.cpp */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		3CF99746206969C00002598D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3CF99747206969DD0002598D /* PAI_Modules.h */,
+				3CF9974820696A7B0002598D /* PAI_MOD.cpp */,
+				3CF9974920696A7B0002598D /* PAI_MOD.hpp */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C433B622069594F007F666F /* main.cpp in Sources */,
+				3CF9974A20696A7B0002598D /* PAI_MOD.cpp in Sources */,
+				3CF99745206968E50002598D /* pai_compiler.cpp in Sources */,
+				3CF9973D2069631A0002598D /* pai_log.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
