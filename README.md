@@ -13,8 +13,12 @@ The purpose of the project is to to create an access protocol to the BOT, learni
 1.1.3 TCP
 
 1.2 PAI-CODE
-1.2.1 Modules 
-1.2.2 
+PAI-CODE is a distributed programing language that should be the executed.
+
+1.2.1 PAI Realtime Compiler
+PAI-CODE 
+1.2.2 Modules
+1.2.3
 
 1.3 PAI-COMPILER
 
